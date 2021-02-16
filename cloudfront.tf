@@ -2,7 +2,7 @@ resource "aws_cloudfront_origin_access_identity" "default" {
   count = var.cloudfront ? 1 : 0
 }
 
-resource "aws_cloudfront_distribution" "s3_distribution" {
+resource "aws_cloudfront_distribution" "default" {
   count = var.cloudfront ? 1 : 0
 
   origin {
