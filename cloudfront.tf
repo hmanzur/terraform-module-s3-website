@@ -21,7 +21,6 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   logging_config {
     include_cookies = false
     bucket          = "${var.bucket_name}.s3.amazonaws.com"
-    prefix          = "myprefix"
   }
 
   aliases = var.aliases
@@ -31,7 +30,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   }
 
   default_cache_behavior {
-    allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
+    allowed_methods  = ["GET", "HEAD", "OPTIONS"]
     cached_methods   = ["GET", "HEAD"]
     target_origin_id = aws_s3_bucket.website.id
 
