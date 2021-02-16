@@ -2,7 +2,7 @@
 
 Using S3 Website and CloudFront if needed
 
-How to use
+# Example
 
 ```workflow
 module "website" {
