@@ -5,19 +5,20 @@ Using S3 Website and CloudFront if needed
 How to use
 
 ```workflow
-module "vpc" {
+module "website" {
   source = "git@github.com:hmanzur/terraform-module-s3-website.git"
-
-  name = "VPC Cool Name"
+  
+  bucket_name = "my-cool-bucket"
+  enable_cloudfront = true
 }
 ```
 
 ## Variables
 
-| Variable   | Default     | Required | Description    |
-|------------|-------------|----------|----------------|
-| name       | 10.0.0.0/16 | No       | VPC name       |
-| cidr_block |             | Yes      | VPC CIDR Block |
+| Variable          | Default     | Required | Description    |
+|-------------------|-------------|----------|----------------|
+| name              | 10.0.0.0/16 | No       | VPC name       |
+| enable_cloudfront |             | Yes      | VPC CIDR Block |
 
 ## Outputs
 
