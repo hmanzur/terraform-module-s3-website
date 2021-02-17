@@ -1,11 +1,15 @@
-variable "bucket_name" {}
+variable "bucket_name" {
+  description = "S3 Bucket name"
+}
 
 variable "index_document" {
   default = "index.html"
+  description = "Root index page"
 }
 
 variable "error_document" {
   default = "index.html"
+  description = "Failover default page"
 }
 
 variable "cloudfront" {
@@ -16,12 +20,12 @@ variable "cloudfront" {
 
 variable "policy" {
   default     = false
-  description = "Set custom policy"
+  description = "Custom policy"
 }
 
 variable "aliases" {
   default     = []
-  description = "Cloudfront Array Aliases"
+  description = "Cloudfront domain aliases"
 }
 
 variable "whitelist" {

@@ -9,11 +9,11 @@ output "website_endpoint" {
 }
 
 output "cloudfront_id" {
-  value       = aws_cloudfront_distribution.default.id
+  value       = aws_cloudfront_distribution.default[0].id
   description = "Cloudfront id"
 }
 
 output "domain_name" {
-  value       = aws_cloudfront_distribution.default.domain_name
+  value       = aws_cloudfront_distribution.default[0].domain_name
   description = "Cloudfront domain name"
 }
