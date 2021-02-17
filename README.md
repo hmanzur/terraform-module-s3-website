@@ -65,7 +65,7 @@ module "website" {
 |-------------------|-------------------------------------|----------|-------------------------------|
 | bucket_name       |                                     | Yes      | S3 Bucket name                |
 | index_document    | `index.html`                        | No       | Root index page               |
-| error_document    | `index.html`                        | No       | VPC CIDR Block                |
+| error_document    | `index.html`                        | No       | Failover default page         |
 | cloudfront        | false                               | No       | Enables CloudFront            |
 | policy            |[policy.json](files/policy.json.tpl) | No       | Custom policy                 |
 | aliases           | []                                  | No       | Cloudfront domain aliases     |
