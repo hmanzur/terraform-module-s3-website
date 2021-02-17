@@ -73,5 +73,7 @@ module "website" {
 
 ## Outputs
 
-- The VPC `Id`
-- The VPC `cidr_block`
+- S3 id: `s3_id`
+- S3 website endpoint: `website_endpoint`
+- Cloudfront Id: `cloudfront_id`
+- Cloudfront domain name: `domain_name`
