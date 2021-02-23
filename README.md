@@ -1,6 +1,6 @@
 # Terraform Module AWS S3 Website
 
-Using S3 Website and CloudFront if needed
+Creates a website using S3 bucket with Website and CloudFront if needed
 
 ## Example
 
